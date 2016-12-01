@@ -9,13 +9,16 @@
 #include "stdafx.h"
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 int main()
 {
-
-	cout << "My name is Matt Engesser and I am lame, press anything if you agree\n\n\n";
+	string input;
+	cout << "My name is Matt Engesser and I am lame, type kill me if you agree\n\n\nEnter input: ";
+	getline(cin, input);
+	if (input == "kill me")
+		cout << "yeah right you live on this eternal plane for all eternity\n\n";
+	else cout << "idfk i hate my life\n\n";
 
 	system("pause");
 
